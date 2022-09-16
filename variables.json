@@ -1,0 +1,12 @@
+{
+    "PROJECT_ID": "",
+    "CLUSTER_NAME": "",
+    "REGION": "",
+    "JAR_URI": "",
+    "ASTRA_BUNDLE_PATH": "",
+    "ASTRA_USERNAME": "",
+    "ASTRA_SECRET": "",
+    "ASTRA_DB_NAME": "",
+    "ASTRA_KEYSPACE_NAME": "",
+    "ASTRA_TABLE_NAME": ""
+}
