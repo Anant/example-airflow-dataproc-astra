@@ -1,0 +1,12 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+# because this is not at the root, and since we don't want to spin up airflow immediately in case you are working on something else,
+tasks:
+  - name: Airflow
+    init: |
+      pip install apache-airflow[google]
+    #  pip install protobuf==3.20.*
+    command: bash /workspace/example-airflow-dataproc-astra/setup.sh
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 8080
