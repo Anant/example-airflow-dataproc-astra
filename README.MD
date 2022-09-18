@@ -17,19 +17,15 @@ If you want to modify the Scala Spark Jar, you can reference `spark-cassandra.sc
 #### 1.3 Download and upload the your database's secure-connect-<db_name>.zip to your bucket
 #### 1.4 Copy and paste down the `gsutil URI`'s for both of the files
 
-### 2. Install and Start Airflow
-```bash
-bash /workspace/example-airflow-dataproc-astra/
-```
+### 2. Create and upload service account keyfile json to working directory
+[Documentation on how to do so](https://cloud.google.com/iam/docs/creating-managing-service-account-keys)
 
 ### 3. Update Google Connection in Airflow
 #### 3.1 When prompted in the lower right-hand corner for `port 8080`, click `open browser`
 Airflow credentials are `admin` `admin`
 #### 3.2 Go to Admin -> Connections -> google_cloud_default
 
-#### 3.3 Upload your keyfile.json to the root directory
-
-#### 3.4 Copy the full path and paste into the `Keyfile Path` section of the Google connection setup and save.
+#### 3.3 Copy the full path of the keyfile.json and paste into the `Keyfile Path` section of the Google connection setup and save.
 
 ### 4. Update Variables
 
